@@ -1,0 +1,1 @@
+xlua.hotfix(CS.SpawnUI,"SpawnObj",nil)
