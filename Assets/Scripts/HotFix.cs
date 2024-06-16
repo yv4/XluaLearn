@@ -67,9 +67,10 @@ public class HotFix : MonoBehaviour
     {
         Debug.Log("LoadHotFixCorotine");
         string scriptPath = Path.Combine(Application.dataPath, luascriptsFold);
-        UnityWebRequest request = UnityWebRequest.Get(@"file:///D:/NetBox/NetBoxInstall/NetBox%202.8/Main.lua");
+        UnityWebRequest request = UnityWebRequest.Get(@"file:///D:\UnityLearn/XluaLern\XLuaTest/XluaLearn\HotFix/Main.lua");
         yield return request.SendWebRequest();
         string str = request.downloadHandler.text;
+        Debug.Log("Read HotFix:" + str);
         scriptPath = Path.Combine(scriptPath, "Main.lua");
         File.WriteAllText(scriptPath,str);
         Debug.Log("LoadHotFixCorotineFinish");
@@ -80,9 +81,10 @@ public class HotFix : MonoBehaviour
     {
         Debug.Log("LoadHotFixDisposeCorotine");
         string scriptPath = Path.Combine(Application.dataPath, luascriptsFold);
-        UnityWebRequest request = UnityWebRequest.Get(@"file:///D:/NetBox/NetBoxInstall/NetBox%202.8/MainDispose.lua");
+        UnityWebRequest request = UnityWebRequest.Get(@"file:///D:\UnityLearn/XluaLern\XLuaTest/XluaLearn\HotFix/MainDispose.lua");
         yield return request.SendWebRequest();
         string str = request.downloadHandler.text;
+        Debug.Log("Read HotFix:" + str);
         scriptPath = Path.Combine(scriptPath, "MainDispose.lua");
         File.WriteAllText(scriptPath, str);
         Debug.Log("LoadHotFixDisposeCorotineFinish");

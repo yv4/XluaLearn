@@ -1,5 +1,5 @@
 print("Hellos")
---ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ð·ï¿½ï¿½ï¿½ ï¿½ï¿½Òªï¿½ï¿½Î´ï¿½ï¿½ï¿½
+--Èç¹ûÒªµ÷ÓÃÀàÖÐË½ÓÐ·½·¨ ÐèÒªÕâ¶Î´úÂë
 xlua.private_accessible(CS.SpawnUI)
 xlua.hotfix(CS.SpawnUI,'SpawnObj',function(self)
 	for i=0,4,1 do
